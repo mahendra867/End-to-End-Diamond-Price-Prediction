@@ -1,0 +1,23 @@
+import sys  # if i want to interact with the system we need to use this sys module, this sys module helps us to get information like at which file we are getting error and at what line we are getting error and it shows error in detail message, so sys module helps us because it tracing each and every file execution which is happining in backend , so with this sys module i could get error details in more detail way
+
+class customeexcetion(Exception): # here i have created one class which is customeexecution , so if we try call this class by object the __init__ method gets executed by default in order to execute the __init__ method we need to call this __init__ method by passing the arguments to the parameters which i have mentioned inside the __init__ method by inside custome =exception class
+
+    def __init__(self,error_message,error_details:sys):  # here 2 parameters i have defined to this __init__ method which are error_message,error_details:sys and for error_details parameter i have defined  its type of the varaible which is sys, so we can define the type of the varaible inside the method syntax = varaible_name:type  , and iam going to pass this parameter arguments inside the customexception class which i have mention in raise part after , so their i have written like raise customexception(e,sys), it means e is the argument or value which iam passing to parameter error_message and sys is the argument or paramter which iam passing to the parameter error_detail 
+        self.error_message=error_message
+        _,_,exc_tb=error_details.exc_info()  # here _,_,exc_tb i have created 3 variables and whatver the error information i get by this error_info method when i called by this error_detail variable which has sys module as value inside this error_detail variable ,so this error_detail variable which has sys module which it call the exc_info method and we get error information from this method exc_info, and get assigned to the exc_tb variable , and rest of 2 variables which are _,_ these are consider as an empty value which for this _,_ variables it always shows value as None and   so error_detail.exc_info means i have  iam calling the exc_info() method for collecting the information from the entier execution, the execution which is happing during this process, actually _,_,exc_tb variables generally taken like this exc_type, exc_value, exc_traceback, for the 2 varaibles exc_type, exc_value i have taken as _,_, it means i dont want to use those varaibles so thatsy i have taken like this _,_ 
+        print(exc_tb)  # here iam going to print the erro of object id of trackback 
+        self.lineno=exc_tb.tb_lineno  # here iam going to collect the line number of that particular error message which stored in exc_tb , and storing that traceback lineno in lineno varaible
+        self.file_name=exc_tb.tb_frame.f_code.co_filename   # here iam going to collect the filename from which file iam getting error and storing the filename in the varaible filename , so if we refer this sys module in google we can get familier this all defined varaibles  
+    def __str__(self):  # here iam defining iam method which is string representation as object
+        return "Error occured in python script name [{0}] line number [{1}] error message [{2}]".format(
+        self.file_name, self.lineno, str(self.error_message)) # here iam going to return this customized error message through this __str__method , and this customerro message returning filename which iam getting erro ,and at which line number iam getting error in that specific file, and what is the error message for that specific line , so this is error message 
+        
+
+if __name__ == "__main__": # so if i want to execute this module in standalone mode here iam giving the condition
+
+    try:
+         a=1/0 # here we  will get the zero division error , if we execute this code without customexception class ,if we try to print the error we just get only zerodivisionerror ,if we want o get more details of error then we need to use the customexception with sys module 
+
+    except Exception as e:
+        # print(e)  # here if we print the try to run the try block we error which this exception block handiling that error and its showing that error in the output by just printing zero division error
+        raise customeexcetion(e,sys)  # here by using the customeexception class iam raising the exception in more detail way, like whatever the error or exception iam getting i want to customize that particular message, i want to get more detail message from the error , so its like what is exception, and at what line iam getting exception, everthing we can get to know easily by this customeeexception class
