@@ -22,7 +22,7 @@ list_of_files=[ # below iam going to create different path which consist of dire
     "tests/unit/__inti__.py", # now iam going to create a file named as test which we can test our different different testcases ,actually that iam going to mention inside my code itself, so there are 2 types of testing one is Unit testing and 2nd is integrating testing so both we are going to do regrading different different test cases , so basically unit testing means we test for the individual components and integrated testing means we are going to test the all components, os we use integrating testing if we want to test our enitre components in single go, so 1st file iam going to create inside test is __inti__.py
     "tests/integration/__inti__.py" ,
     "init_setup.sh", # now iam going to created a file named as init_setup.sh here sh means shell scrip
-    "requirements.txt",
+    "requirements_operations.txt",
     "requirements_dev.txt",# here iam going to create 1 more requirements file which is requirements_dev.txt so basically this file for development environment only, so if we want to deploy this code or productioniz this code so for the production all the requirements will be available inside this requirments_dev.txt, so whenever  i want to install requirement related to development iam going to run this file 
     "setup.py",
     "setup.cfg",

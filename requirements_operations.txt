@@ -1,0 +1,1 @@
+# the libraries which are required for operations environment i will write here to perform the operations for deploying the application
