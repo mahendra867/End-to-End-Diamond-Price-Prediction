@@ -1,3 +1,3 @@
-from src.logger import logger
+from src.logger.logger import logging
 
-logging.info("this is  my first log")
+logging.info("this is my first testing")

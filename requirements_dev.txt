@@ -5,7 +5,7 @@ numpy
 seaborn
 scikit-learn
 mlflow==2.2.2
-flask
+Flask
 dvc
 ipykernel
 xgboost

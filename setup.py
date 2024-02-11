@@ -14,11 +14,16 @@ def get_requirements(file_path:str)->List[str]:
 
     return requirements
 
+get_requirements('./requirements_dev.txt')
+
+
+
 setup(
     name='DimondPricePrediction',
     version='0.0.1',
-    author='Mahendra',
+    author='mahendramahi',
     author_email='mahendramahesh2001@gmail.com',
-    #install_requires=["scikit-learn","pandas","numpy"],
+    install_requires=["scikit-learn","pandas","numpy"],
     packages=find_packages()
 )
+
