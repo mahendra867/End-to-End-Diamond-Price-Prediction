@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/datascience%20End%20to%20End%20Projects/End%20to%20End%20Mlops%20Project/End-to-End-Diamond-Price-Prediction/mlruns/0/ce94bea4070f421da0660d8719c40d7c/artifacts
+end_time: 1707837531748
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: ce94bea4070f421da0660d8719c40d7c
+run_name: glamorous-lark-86
+run_uuid: ce94bea4070f421da0660d8719c40d7c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1707837531683
+status: 3
+tags: []
+user_id: mahen

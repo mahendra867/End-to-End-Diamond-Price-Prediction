@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/datascience%20End%20to%20End%20Projects/End%20to%20End%20Mlops%20Project/End-to-End-Diamond-Price-Prediction/mlruns/0/9a7a2633f86f450081f75f307c79dfa7/artifacts
+end_time: 1707837514929
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 9a7a2633f86f450081f75f307c79dfa7
+run_name: adorable-kite-848
+run_uuid: 9a7a2633f86f450081f75f307c79dfa7
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1707837514828
+status: 3
+tags: []
+user_id: mahen
